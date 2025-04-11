@@ -3,99 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicios de QA de Alto Impacto</title>
+  <title>Servicios QA de Alto Impacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      margin-top: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    ul {
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f5f9;
+      color: #333;
       line-height: 1.6;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      background: #003366;
+
+    header {
+      background: linear-gradient(to right, #004080, #0066cc);
       color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      padding: 0.8rem;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #004080;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Servicios de Aseguramiento de Calidad de Software</h1>
-    <p>Más de 10 años de experiencia en QA, automatización y pruebas de rendimiento</p>
+    <h1>Servicios QA de Alto Impacto</h1>
+    <p>Experticia en automatización y pruebas de rendimiento para garantizar la calidad total de tus aplicaciones</p>
   </header>
 
-  <section>
-    <h2>¿Quién soy?</h2>
-    <p>
-      Soy un profesional con más de 10 años de experiencia en aseguramiento de calidad (QA), 
-      especializado en automatización de pruebas durante más de 8 años y en evaluación de rendimiento por más de 5 años.
-    </p>
-  </section>
+  <main>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>
+        Con más de 10 años en QA, me especializo en automatización de pruebas (8+ años) y evaluación de rendimiento (5+ años), 
+        aplicando JMeter y un kit integral de monitoreo para detectar cuellos de botella y optimizar el rendimiento.
+      </p>
+    </section>
 
-  <section>
-    <h2>Servicios Ofrecidos</h2>
-    <ul>
-      <li>Automatización de pruebas para aplicaciones web, móviles, de escritorio y APIs</li>
-      <li>Pruebas de rendimiento con JMeter y monitoreo integral de aplicaciones</li>
-      <li>Entrenamiento y capacitación en automatización y performance</li>
-      <li>Aplicación de buenas prácticas según estándares ISTQB</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Servicios</h2>
+      <ul>
+        <li>Automatización de pruebas para aplicaciones web, móviles, APIs y escritorio</li>
+        <li>Pruebas de rendimiento con JMeter y monitoreo completo de aplicaciones</li>
+        <li>Capacitación a equipos de QA en automatización y performance</li>
+        <li>Aplicación de buenas prácticas según ISTQB</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Herramientas y Tecnologías</h2>
-    <p>He trabajado con una variedad de tecnologías incluyendo:</p>
-    <ul>
-      <li>Selenium, Serenity BDD, Cypress, CodeceptJS, Appium, Rest Assured, Sikulix</li>
-      <li>JUnit, TestNG, Cucumber</li>
-      <li>Jenkins, Azure DevOps, Docker, GIT</li>
-      <li>JMeter y herramientas de monitoreo de rendimiento</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Herramientas y Tecnologías</h2>
+      <ul>
+        <li><strong>Automatización:</strong> Selenium, Cypress, Serenity BDD, CodeceptJS, Appium, Rest Assured, Sikulix, Cucumber</li>
+        <li><strong>Testing Frameworks:</strong> TestNG, JUnit</li>
+        <li><strong>CI/CD:</strong> Jenkins, Azure DevOps</li>
+        <li><strong>Contenedores y control de versiones:</strong> Docker, Git</li>
+        <li><strong>Performance:</strong> JMeter + herramientas de monitoreo de cliente y servidor</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Experiencia en Diversos Sectores</h2>
-    <p>
-      He implementado soluciones en empresas de sectores como banca, inversiones, seguros y cuidado personal, 
-      adaptándome a los desafíos específicos de cada entorno.
-    </p>
-  </section>
+    <section>
+      <h2>Experiencia por Industria</h2>
+      <p>
+        He trabajado en sectores como banca, inversiones, seguros y cuidado personal. Esta diversidad me ha permitido adaptar 
+        las soluciones a necesidades específicas, maximizando la eficiencia de cada sistema probado.
+      </p>
+    </section>
 
-  <section>
-    <h2>Reconocido por...</h2>
-    <ul>
-      <li>Mi enfoque autodidacta y proactivo</li>
-      <li>Mi capacidad para compartir conocimiento y fortalecer equipos</li>
-      <li>Mi habilidad para evaluar métricas desde el cliente y el servidor para garantizar un sistema óptimo</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Reconocimientos</h2>
+      <ul>
+        <li>Autodidacta apasionado por compartir conocimiento</li>
+        <li>Formador de equipos en automatización y performance testing</li>
+        <li>Experto en análisis de métricas de rendimiento del lado del cliente y servidor</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo electrónico" required />
+        <textarea rows="5" placeholder="Cuéntame cómo puedo ayudarte..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>¿Interesado en mejorar la calidad de tu software? ¡Contáctame!</p>
+    <p>© 2025 Servicios QA de Alto Impacto · Desarrollado con pasión por la calidad</p>
   </footer>
 </body>
 </html>

@@ -2,193 +2,138 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicios QA de Alto Impacto</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios de Calidad de Software</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f2f5f9;
+      background-color: #f4f6f9;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(to right, #004080, #0066cc);
+      background-color: #0d47a1;
       color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    main {
       padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
+      text-align: center;
     }
 
     section {
-      background: white;
-      margin-bottom: 2rem;
       padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    section:hover {
-      transform: translateY(-5px);
-    }
-
-    h2 {
-      color: #004080;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    ul li {
+    h1, h2 {
       margin-bottom: 0.5rem;
     }
 
-    footer {
-      background-color: #004080;
+    .highlight {
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0d47a1;
+    }
+
+    a.linkedin-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #0077b5;
       color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      margin-bottom: 1rem;
-      padding: 0.8rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    .contact-form button {
-      padding: 0.8rem;
-      background-color: #0066cc;
-      color: white;
-      border: none;
       border-radius: 8px;
       font-size: 1rem;
-      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
       transition: background-color 0.3s;
     }
 
-    .contact-form button:hover {
-      background-color: #004080;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      main {
-        padding: 1rem;
-      }
+    a.linkedin-button:hover {
+      background-color: #005582;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Servicios QA de Alto Impacto</h1>
-    <p>Experticia en automatización y pruebas de rendimiento para garantizar la calidad total de tus aplicaciones</p>
+    <h1>Servicios de Alta Calidad en QA</h1>
+    <p>Más de 10 años asegurando calidad, rendimiento y excelencia en automatización de pruebas</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Sobre mí</h2>
-      <p>
-        Con más de 10 años en QA, me especializo en automatización de pruebas (8+ años) y evaluación de rendimiento (5+ años), 
-        aplicando JMeter y un kit integral de monitoreo para detectar cuellos de botella y optimizar el rendimiento.
-      </p>
-    </section>
+  <section>
+    <h2>¿Quién soy?</h2>
+    <p>Soy un profesional con <span class="highlight">más de 10 años de experiencia</span> en el campo del aseguramiento de la calidad de software (QA), con especialización en <span class="highlight">automatización de pruebas</span> y <span class="highlight">evaluación del rendimiento</span> de aplicaciones.</p>
+    <p>He trabajado en proyectos de gran impacto en sectores como <strong>banca, inversiones, seguros y cuidado personal</strong>, aplicando las mejores prácticas y estándares del ISTQB.</p>
+  </section>
 
-    <section>
-      <h2>Servicios</h2>
-      <ul>
-        <li>Automatización de pruebas para aplicaciones web, móviles, APIs y escritorio</li>
-        <li>Pruebas de rendimiento con JMeter y monitoreo completo de aplicaciones</li>
-        <li>Capacitación a equipos de QA en automatización y performance</li>
-        <li>Aplicación de buenas prácticas según ISTQB</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Servicios que ofrezco</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Automatización de Pruebas</h3>
+        <p>Diseño y desarrollo de suites de pruebas automatizadas para aplicaciones web, móviles, APIs y de escritorio.</p>
+      </div>
+      <div class="card">
+        <h3>Pruebas de Rendimiento</h3>
+        <p>Evaluación de rendimiento con JMeter, incluyendo monitoreo de métricas del cliente y servidor para detectar cuellos de botella.</p>
+      </div>
+      <div class="card">
+        <h3>Capacitación y Entrenamiento</h3>
+        <p>Formación técnica en automatización y pruebas de rendimiento, fortaleciendo equipos QA con un enfoque práctico.</p>
+      </div>
+      <div class="card">
+        <h3>Mejores Prácticas QA</h3>
+        <p>Implementación de procesos y estándares de calidad según ISTQB, mejorando la eficiencia del ciclo de pruebas.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Herramientas y Tecnologías</h2>
-      <ul>
-        <li><strong>Automatización:</strong> Selenium, Cypress, Serenity BDD, CodeceptJS, Appium, Rest Assured, Sikulix, Cucumber</li>
-        <li><strong>Testing Frameworks:</strong> TestNG, JUnit</li>
-        <li><strong>CI/CD:</strong> Jenkins, Azure DevOps</li>
-        <li><strong>Contenedores y control de versiones:</strong> Docker, Git</li>
-        <li><strong>Performance:</strong> JMeter + herramientas de monitoreo de cliente y servidor</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Tecnologías dominadas</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Automatización</h3>
+        <p>Selenium, Cypress, CodeceptJS, Serenity BDD, Appium, Siculix, Cucumber</p>
+      </div>
+      <div class="card">
+        <h3>Pruebas de API</h3>
+        <p>Rest Assured, Postman, Newman</p>
+      </div>
+      <div class="card">
+        <h3>Pruebas de Rendimiento</h3>
+        <p>JMeter con monitoreo integral del sistema</p>
+      </div>
+      <div class="card">
+        <h3>DevOps & CI/CD</h3>
+        <p>Jenkins, Azure DevOps, Docker, Git</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Experiencia por Industria</h2>
-      <p>
-        He trabajado en sectores como banca, inversiones, seguros y cuidado personal. Esta diversidad me ha permitido adaptar 
-        las soluciones a necesidades específicas, maximizando la eficiencia de cada sistema probado.
-      </p>
-    </section>
+  <section>
+    <h2>Contacto</h2>
+    <p>¿Te interesa mejorar la calidad y rendimiento de tus aplicaciones? Estoy disponible para ayudarte.</p>
+    <a href="https://www.linkedin.com/in/tuusuario" class="linkedin-button" target="_blank">Conectar por LinkedIn</a>
+  </section>
 
-    <section>
-      <h2>Reconocimientos</h2>
-      <ul>
-        <li>Autodidacta apasionado por compartir conocimiento</li>
-        <li>Formador de equipos en automatización y performance testing</li>
-        <li>Experto en análisis de métricas de rendimiento del lado del cliente y servidor</li>
-      </ul>
-    </section>
-
-<section>
-  <h2>Contacto</h2>
-  <p>¿Te interesa mejorar la calidad y rendimiento de tus aplicaciones? Estoy disponible para ayudarte. Contáctame directamente en LinkedIn:</p>
-  <a href="https://www.linkedin.com/in/sadycabrera" target="_blank" style="
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    background-color: #0077b5;
-    color: white;
-    border-radius: 8px;
-    font-size: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  ">Conectar por LinkedIn</a>
-</section>
-  </main>
-
-  <footer>
-    <p>© 2025 Servicios QA de Alto Impacto · Desarrollado con pasión por la calidad</p>
-  </footer>
 </body>
 </html>
